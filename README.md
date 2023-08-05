@@ -72,15 +72,14 @@ Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning
 
 ## Credits
 
-This software uses the following open source packages:
+This software uses the following packages:
 
-- [Electron](http://electron.atom.io/)
+- [NextJS](http://nextjs.org)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
+- [Moment](https://momentjs.org)
+- [Keen]
+- [Sanity](http://sanity.io/)
+- [K&K Media Group Sweden AB - CMS] - internal use only
 
 ## Related
 
