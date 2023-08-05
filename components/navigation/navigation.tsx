@@ -8,14 +8,10 @@ import Themebutton from "../ThemeButton"
 const Navigation = () => {
   return (
   <header>
-        <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black bg-white dark:bg-black dark:text-white border- border-2 sticky top-0 z-50">       <div className="border-r-2	">
+        <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black bg-white dark:bg-black dark:text-white border- border-2 sticky top-0 z-50">       
+        <div className="">
           <a href="/">
-          <Image
-            src="/app/favicon.ico"
-            width={50}
-            height={50}
-            alt="K&K RECORDS Logotyp"
-          />
+          <span className="self-center text-2xl font-semibold">K&amp;K RECORDS</span>
           </a>
         </div>
        
