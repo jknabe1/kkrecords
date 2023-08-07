@@ -30,7 +30,7 @@ export default function RootLayout(
       async src="//gc.zgo.at/count.js">
       </script>
       <script type="text/javascript" 
-      src="//cdn.cookie-script.com/s/a4be59e1f9e75da3214c98f0d1417fd3.js"></script>
+      async src="//cdn.cookie-script.com/s/a4be59e1f9e75da3214c98f0d1417fd3.js"></script>
       <body>
         <Providers> 
         <Navigation/>
