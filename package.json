@@ -11,6 +11,7 @@
   "dependencies": {
     "@portabletext/react": "^3.0.4",
     "@sanity/image-url": "^1.0.2",
+    "@sentry/nextjs": "^7.61.1",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -18,8 +19,6 @@
     "axios": "^1.4.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.7",
-    "graphql": "^16.7.1",
-    "graphql-request": "^6.1.0",
     "html-react-parser": "^4.0.0",
     "keen-slider": "^6.8.6",
     "moment": "^2.29.4",
@@ -29,7 +28,6 @@
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-responsive-carousel": "^3.2.23",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   }

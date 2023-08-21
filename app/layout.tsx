@@ -1,8 +1,8 @@
 import './globals.css'
 import Navigation from '@/components/navigation/navigation'
 import Footer from '@/components/footer/footer'
-import Newsletter from '@/components/newsletter/page'
 import { Providers } from '@/components/provider'
+import Cursor from '@/components/cursor/cursor'
 
 
 export const metadata = {
@@ -11,6 +11,7 @@ export const metadata = {
 }
 
 console.log("Greetings from K&K Media Group Sweden AB. This was a fun project and hopefully you'll be interested in K&K Records.");
+
 
 
 export default function RootLayout(
@@ -25,20 +26,19 @@ export default function RootLayout(
  {
   return (
     <html lang="SE_sv" suppressHydrationWarning>
-      <link rel="manifest" href="/public/manifest.json" />
       <script 
       data-goatcounter="https://kkrecords.goatcounter.com/count"
       async src="//gc.zgo.at/count.js">
       </script>
-      <script type="text/javascript" 
-      src="//cdn.cookie-script.com/s/a4be59e1f9e75da3214c98f0d1417fd3.js"></script>
+      <script type="text/javascript" async src="//cdn.cookie-script.com/s/a4be59e1f9e75da3214c98f0d1417fd3.js"></script>
+      <script async src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
       <body>
+        <Cursor/>
         <Providers> 
         <Navigation/>
-          <main className="min-h-screen">
+          <main className="min-h-screen bg-white dark:bg-black border-black">
             {children}
           </main>
-          <Newsletter/>
           <Footer/>
         </Providers>
       </body>

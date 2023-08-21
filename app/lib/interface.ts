@@ -21,3 +21,12 @@ export interface Information {
   _createdAt: string;
   _modifiedAt: string;
 }
+
+export interface Artists {
+  title: string;
+  content: any;
+  _id: string;
+  slug: {
+    current: string;
+  };
+}

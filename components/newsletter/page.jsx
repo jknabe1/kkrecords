@@ -28,25 +28,25 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="bg-white py-8">
+    <div className="py-8 newsletter-bg">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Subscribe to our Newsletter</h2>
-        <p className="text-gray-600 mb-4">Get updates, news, and special offers straight to your inbox.</p>
+        <h2 className="text-2xl font-bold text-black mb-4">Brev?</h2>
+        <p className="text-black mb-4">Kan du inte få nog av oss? Isåfall, gå med i vårt mejlutskick. Då får du den senaste informationen från oss. Kan vara allt från nya band och konserter till rekommendationer. </p>
         <form onSubmit={handleSubmit}>
           <div className="flex items-center">
             <input
               type="email"
-              placeholder="Enter your email"
-              className="mr-2 px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500"
+              placeholder="Din mejl..."
+              className="mr-2 px-4 py-2 border-b-2 bg-transparent border-black focus:outline-none text-black"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <button
               type="submit"
-              className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
+              className="px-4 py-2 text-black hover:text-white hover:bg-black focus:outline-none border-2 border-black rounded-lg"
             >
-              Subscribe
+              Sign me up!
             </button>
           </div>
         </form>

@@ -4,5 +4,4 @@ import information from "./information"
 export const schemaTypes = [
     post,
     information,
-
 ]

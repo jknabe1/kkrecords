@@ -1,15 +1,23 @@
 import Link from "next/link"
 import moment from "moment"
+import Newsletter from "../newsletter/page"
+import FooterImage from "./footerImage"
+
 
 const footer = () => {
   return (
     <div>
+		<FooterImage/>
+		<Newsletter/>
       <footer className="px-4 divide-y dark:bg-black dark:text-white  ">
 	<div className="container flex flex-col justify-between pt-10 pb-[90px] mx-auto space-y-8 lg:flex-row lg:space-y-0">
 		<div className="lg:w-1/3">
 			<Link rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
 				<span className="self-center text-2xl font-semibold">K&K RECORDS</span>
 			</Link>
+			<p>
+				K&K RECORDS är en ideell förening som arbetar med att främja ungdomars musikkarriär. Som artist och arrangör. 	
+			</p>
 		</div>
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 			<div className="space-y-3">

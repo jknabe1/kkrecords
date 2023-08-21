@@ -22,7 +22,7 @@ export default async function Home() {
             STYRELSEN
           </h1>
         </div>
-  
+
         <ul>
           {data.map((post) => (
             <li key={post._id} className="py-4">

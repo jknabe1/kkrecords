@@ -9,9 +9,6 @@ const Carousel = () => {
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
-      slideChanged() {
-        console.log('New pic, you are welcome.')
-      },
     },
     [
       (slider) => {
@@ -56,17 +53,8 @@ const Carousel = () => {
   <div className="keen-slider__slide number-slide3">
     <Image src="https://cdn.smehost.net/rcarecordscom-usrcaprod/wp-content/uploads/2023/02/RCA-Home-15-1-1024x593.jpg" alt="3" width={1920} height={1080}/>
   </div>
-  <div className="keen-slider__slide number-slide4">
-    <Image src="/image4.png" alt="4" width={0} height={0}/>
   </div>
-  <div className="keen-slider__slide number-slide5">
-    <Image src="/image5.png" alt="5" width={0} height={0}/>
   </div>
-  <div className="keen-slider__slide number-slide6">
-    <Image src="/image6.png" alt="6" width={0} height={0}/>
-  </div>
-</div>
-    </div>
   )
 }
 

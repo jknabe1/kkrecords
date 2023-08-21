@@ -2,20 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://use.typekit.net/lkk4yow.css") crossorigin;
-
-
 
 :root{
-    --border-width: 2px;
-    --border-color: #000;
-    --border-color-light: #fff
-    --color-black: #0F0E0E
-    --color-white: #FCFDF8
+        --border-width: 2px;
+        --border-color: #000;
+        --border-color-light: #fff;
+        --color-black: #0F0E0E;
+        --color-white: #FCFDF8;
+        --color-yellow: #CDF851;
+        --color-orange: #FF4A23;
+        --color-grey: rgba(252,253,248,0.06275);
+        --color-pink: #FFA8BD;
+
 }
+
+::selection{
+  background-color: white;
+  color: #000;
+}
+
+*{
+    cursor: none !important;
+  }
 
 body{
     font-family: "eurostile", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.flare {
+  position: fixed;
+  border: 20px solid #ffffff;
+  border-radius: 100%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(.5);
+  z-index: 999999 !important ;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  mix-blend-mode: difference;
+}
+
+.flare:hover{
+  transform: translate(-50%, -50%) scale(.1);
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.newsletter-bg{
+  /*background-color: #CDF851;*/
+  background-color: #FF4A23;
 }
