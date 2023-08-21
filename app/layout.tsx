@@ -25,6 +25,7 @@ export default function RootLayout(
  {
   return (
     <html lang="SE_sv" suppressHydrationWarning>
+      <link rel="manifest" href="/public/manifest.json" />
       <script 
       data-goatcounter="https://kkrecords.goatcounter.com/count"
       async src="//gc.zgo.at/count.js">

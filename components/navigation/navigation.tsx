@@ -8,7 +8,7 @@ import Themebutton from "../ThemeButton"
 const Navigation = () => {
   return (
   <header>
-        <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black bg-white dark:bg-black dark:text-white border- border-2 sticky top-0 z-50">       
+        <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black bg-white dark:bg-black dark:text-white border-black dark:border-white  border-2 sticky top-0 z-50">       
         <div className="">
           <a href="/">
           <span className="self-center text-2xl font-semibold">K&amp;K RECORDS</span>
