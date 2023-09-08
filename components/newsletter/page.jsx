@@ -1,4 +1,5 @@
 "use client"
+import "@/app/globals.css"
 
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -37,7 +38,7 @@ const Newsletter = () => {
             <input
               type="email"
               placeholder="Din mejl..."
-              className="mr-2 px-4 py-2 border-b-2 bg-transparent border-black focus:outline-none text-black"
+              className="mr-2 px-4 py-2 border-b-2 bg-transparent border-black focus:outline-none placeholder-black"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required

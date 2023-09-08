@@ -30,3 +30,12 @@ export interface Artists {
     current: string;
   };
 }
+
+export interface Event {
+  title: string;
+  content: any;
+  _id: string;
+  slug: {
+    current: string;
+  };
+}

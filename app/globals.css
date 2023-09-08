@@ -16,6 +16,10 @@
 
 }
 
+::placeholder{
+  color: black;
+}
+
 ::selection{
   background-color: white;
   color: #000;

@@ -7,8 +7,8 @@ import FooterImage from "./footerImage"
 const footer = () => {
   return (
     <div>
-		<FooterImage/>
 		<Newsletter/>
+		<FooterImage/>
       <footer className="px-4 divide-y dark:bg-black dark:text-white  ">
 	<div className="container flex flex-col justify-between pt-10 pb-[90px] mx-auto space-y-8 lg:flex-row lg:space-y-0">
 		<div className="lg:w-1/3">
@@ -21,19 +21,13 @@ const footer = () => {
 		</div>
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 			<div className="space-y-3">
-				<h3 className="tracking-wide uppercase dark:text-gray-50">Kategorier</h3>
+				<h3 className="tracking-wide uppercase dark:text-gray-50">MER OM K&K</h3>
 				<ul className="space-y-1">
 					<li>
-						<Link rel="noopener noreferrer" href="#">Features</Link>
+						<Link rel="noopener noreferrer" href="#">Kulturförening K&K</Link>
 					</li>
 					<li>
-						<Link rel="noopener noreferrer" href="#">Integrations</Link>
-					</li>
-					<li>
-						<Link rel="noopener noreferrer" href="#">Pricing</Link>
-					</li>
-					<li>
-						<Link rel="noopener noreferrer" href="#">FAQ</Link>
+						<Link rel="noopener noreferrer" href="#">Velocity</Link>
 					</li>
 				</ul>
 			</div>
