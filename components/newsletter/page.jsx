@@ -32,8 +32,8 @@ const Newsletter = () => {
     <div className="py-8 newsletter-bg">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-black mb-4">Brev?</h2>
-        <p className="text-black mb-4">Kan du inte få nog av oss? Isåfall, gå med i vårt mejlutskick. Då får du den senaste informationen från oss. Kan vara allt från nya band och konserter till rekommendationer. </p>
-        <form onSubmit={handleSubmit}>
+        <p className="text-black mb-4 hidden">Kan du inte få nog av oss? Isåfall, gå med i vårt mejlutskick. Då får du den senaste informationen från oss. Kan vara allt från nya band och konserter till rekommendationer. </p>
+        <form onSubmit={handleSubmit} id="Newsletter">
           <div className="flex items-center">
             <input
               type="email"

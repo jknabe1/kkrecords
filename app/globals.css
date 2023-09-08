@@ -9,7 +9,7 @@
         --border-color-light: #fff;
         --color-black: #0F0E0E;
         --color-white: #FCFDF8;
-        --color-yellow: #CDF851;
+        --color-green: #CDF851;
         --color-orange: #FF4A23;
         --color-grey: rgba(252,253,248,0.06275);
         --color-pink: #FFA8BD;
@@ -30,14 +30,14 @@
   }
 
 body{
-    font-family: "eurostile", sans-serif;
+    font-family: "Eurostile", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .flare {
   position: fixed;
-  border: 20px solid #ffffff;
+  border: 20px solid var(--border-color-light);
   border-radius: 100%;
   pointer-events: none;
   transform: translate(-50%, -50%) scale(.5);
@@ -47,7 +47,7 @@ body{
 }
 
 .flare:hover{
-  transform: translate(-50%, -50%) scale(.1);
+  transform: scale(1.1)
 }
 
 @media screen and (max-width: 768px) {
@@ -64,6 +64,5 @@ body{
 }
 
 .newsletter-bg{
-  /*background-color: #CDF851;*/
-  background-color: #FF4A23;
+  background-color: var(--color-green);
 }
