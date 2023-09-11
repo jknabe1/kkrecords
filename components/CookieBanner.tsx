@@ -1,7 +1,7 @@
 const CookieBanner = () => {
   return (
     <div>
-        <section className="z-99999 fixed max-w-md p-4 mx-auto bg-white border-r-4 border-y-4 border-black bottom-0 dark:border-white dark:bg-black dark:text-white">
+        <section className="z-auto fixed max-w-md p-4 mx-auto bg-white border-r-4 border-y-4 border-black bottom-0 dark:border-white dark:bg-black dark:text-white">
             <h2 className="font-semibold text-gray-800 dark:text-white">Kakor</h2>
                 <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
                     Vi använder kakor för att förbättra hemsidan. 
