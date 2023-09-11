@@ -1,8 +1,9 @@
 "use client"
-import "@/app/globals.css"
 
+import "@/app/globals.css"
 import React, { useState } from 'react';
 import axios from 'axios';
+
 const Newsletter = () => {
   const [email, setEmail] = useState('');
 
@@ -29,30 +30,21 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="py-8 newsletter-bg">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-black mb-4">Brev?</h2>
-        <p className="text-black mb-4 hidden">Kan du inte få nog av oss? Isåfall, gå med i vårt mejlutskick. Då får du den senaste informationen från oss. Kan vara allt från nya band och konserter till rekommendationer. </p>
-        <form onSubmit={handleSubmit} id="Newsletter">
-          <div className="flex items-center">
-            <input
-              type="email"
-              placeholder="Din mejl..."
-              className="mr-2 px-4 py-2 border-b-2 bg-transparent border-black focus:outline-none placeholder-black"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <button
-              type="submit"
-              className="px-4 py-2 text-black hover:text-white hover:bg-black focus:outline-none border-2 border-black rounded-lg"
-            >
-              Sign me up!
-            </button>
-          </div>
-        </form>
+    <div className="py-10 px-4 sm:flex sm:justify-center sm:items-center dark:color-black dark:newsletter-bg border-y-4 border-black dark:border-white">
+  <div className="text-center sm:text-left sm:w-1/2">
+    <h2 className="text-2xl font-bold text-black">Få det senaste direkt till din mejl.</h2>
+  </div>
+  <div className="mt-4 sm:mt-0 sm:w-1/2">
+    <form action="#" method="POST" className="max-w-sm mx-auto">
+      <div className="flex items-center border-black rounded-lg">
+        <input autoComplete="on" type="email" id="email" name="email" placeholder="Din mejl..." className="w-full py-2 px-4 rounded-l-lg focus:outline-none focus:ring focus:border-white placeholder-black"/>
+        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-r-lg 
+         hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Sign me up!</button>
       </div>
-    </div>
+    </form>
+  </div>
+</div>
+
   );
 };
 

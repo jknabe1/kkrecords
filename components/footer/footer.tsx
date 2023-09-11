@@ -1,16 +1,14 @@
 import Link from "next/link"
 import moment from "moment"
-import Newsletter from "../newsletter/page"
 import FooterImage from "./footerImage"
 
 
 const footer = () => {
   return (
     <div>
-		<Newsletter/>
 		<FooterImage/>
-      <footer className="px-4 divide-y dark:bg-black dark:text-white  ">
-	<div className="container flex flex-col justify-between pt-10 pb-[90px] mx-auto space-y-8 lg:flex-row lg:space-y-0">
+      <footer className="px-4 divide-y dark:bg-black dark:text-white">
+	<div className="container flex flex-col justify-between pt-10 pb-[90px] mx-auto space-y-8 lg:flex-row lg:space-y-0 ">
 		<div className="lg:w-1/3">
 			<Link rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
 				<span className="self-center text-2xl font-semibold">K&K RECORDS</span>
@@ -49,7 +47,7 @@ const footer = () => {
 				</ul>
 			</div>
 			<div className="space-y-3">
-				<h3 className="uppercase dark:text-gray-50">Information och kontakt</h3>
+				<h3 className="uppercase dark:text-gray-50 underline">Information och kontakt</h3>
 				<ul className="space-y-1">
 					<li>
 						<Link rel="noopener noreferrer" href="#">Kontakta oss</Link>

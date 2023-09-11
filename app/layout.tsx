@@ -3,6 +3,8 @@ import Navigation from '@/components/navigation/navigation'
 import Footer from '@/components/footer/footer'
 import { Providers } from '@/components/provider'
 import Cursor from '@/components/cursor/cursor'
+import Newsletter from '@/components/newsletter/page'
+import CookieBanner from '@/components/CookieBanner'
 
 
 export const metadata = {
@@ -30,15 +32,17 @@ export default function RootLayout(
       data-goatcounter="https://kkrecords.goatcounter.com/count"
       async src="//gc.zgo.at/count.js">
       </script>
-      <script type="text/javascript" async src="//cdn.cookie-script.com/s/a4be59e1f9e75da3214c98f0d1417fd3.js"></script>
       <script async src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
-      <body>
+      <body className=" bg-white dark:bg-black border-black dark:border-white border-4">
         <Cursor/>
+        <CookieBanner/>
         <Providers> 
         <Navigation/>
-          <main className="min-h-screen bg-white dark:bg-black border-black">
+          <main>
             {children}
           </main>
+          
+          <Newsletter/>
           <Footer/>
         </Providers>
       </body>

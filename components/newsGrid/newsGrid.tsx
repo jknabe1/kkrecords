@@ -1,25 +1,49 @@
-import React from 'react'
-import Link from "next/link";
-import { Information } from "../../app/lib/interface";
-import { client } from "../../app/lib/sanity";
+"use client"
 
-async function getData() {
-  const query = `*[_type == "information"]`;
+import React from "react"
+import "../../app/globals.css"
+import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
-  const data = await client.fetch(query);
-
-  return data;
-
+const carousel: KeenSliderPlugin = (slider) => {
+  const z = 300
+  function rotate() {
+    const deg = 360 * slider.track.details.progress
+    slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`
+  }
+  slider.on("created", () => {
+    const deg = 360 / slider.slides.length
+    slider.slides.forEach((element, idx) => {
+      element.style.transform = `rotateY(${deg * idx}deg) translateZ(${z}px)`
+    })
+    rotate()
+  })
+  slider.on("detailsChanged", rotate)
 }
 
-export default async function Home() {
-  const data = (await getData()) as Information[];
+export default function App() {
+  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+    {
+      loop: true,
+      selector: ".carousel__cell",
+      renderMode: "custom",
+      mode: "free-snap",
+    },
+    [carousel]
+  )
 
-
-  return( 
-    <div></div>
-    );
+  return (
+    <div className="wrapper">
+      <div className="scene">
+        <div className="carousel keen-slider" ref={sliderRef}>
+          <div className="carousel__cell number-slide1">1</div>
+          <div className="carousel__cell number-slide2">2</div>
+          <div className="carousel__cell number-slide3">3</div>
+          <div className="carousel__cell number-slide4">4</div>
+          <div className="carousel__cell number-slide5">5</div>
+          <div className="carousel__cell number-slide6">6</div>
+        </div>
+      </div>
+    </div>
+  )
 }
-
-
-

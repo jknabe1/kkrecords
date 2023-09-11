@@ -8,7 +8,7 @@ const FooterImage = () => {
         <section className="block">
 			<div className="flex border-y box-border">
 				<div className="w-1/3 h-auto">
-					<figure className="block w-full h-full m-0 border-r-4 border-b-4 border-black">
+					<figure className="block w-full h-full m-0 border-r-4 border-b-4 border-black dark:border-white">
 						<Image src="https://cdn.smehost.net/rcarecordscom-usrcaprod/wp-content/uploads/2023/05/HOTPOP-1.png" width={1920} height={1080} alt="" priority/>
 					</figure>
 					<div className="">
@@ -18,7 +18,7 @@ const FooterImage = () => {
 					</div>
 				</div>
 				<div className="w-1/3 h-auto">
-					<figure className="block w-full h-full m-0 border-r-4 border-b-4 border-black">
+					<figure className="block w-full h-full m-0 border-r-4 border-b-4 border-black dark:border-white">
 						<Image src="https://cdn.smehost.net/rcarecordscom-usrcaprod/wp-content/uploads/2023/05/HOTPOP-1.png" width={1920} height={1080} alt="" priority/>
 					</figure>
 					<div className="">
@@ -28,7 +28,7 @@ const FooterImage = () => {
 					</div>
 				</div>
 				<div className="w-1/3 h-auto">
-					<figure className="block w-full h-full m-0 border-b-4 border-black">
+					<figure className="block w-full h-full m-0 border-b-4 border-black dark:border-white">
 						<Image src="https://cdn.smehost.net/rcarecordscom-usrcaprod/wp-content/uploads/2023/05/HOTPOP-1.png" width={1920} height={1080} alt="" priority/>
 					</figure>
 					<div className="">
