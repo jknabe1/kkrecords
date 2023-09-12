@@ -11,7 +11,7 @@ const Navigation = () => {
         <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black bg-white dark:bg-black dark:text-white border-black dark:border-white border-y-4 fixed top-0 z-50">       
         <div className="">
           <Link href="/">
-          <span className="self-center text-2xl font-semibold mix-blend-difference dark:text-white text-black">K&amp;K RECORDS</span>
+          <img src="../../assets/KK-LOGO.svg" alt="K&K RECORDS" className="self-center text-2xl font-semibold mix-blend-difference dark:text-white text-black"/>
           </Link>
         </div>
        
@@ -44,15 +44,15 @@ const Navigation = () => {
             </li>
             <li>
               <Link className="md:p-4 py-2 block hover:underline" href="#"
-                >Pricing</Link>
+                >EVENT</Link>
             </li>
             <li>
               <Link className="md:p-4 py-2 block hover:underline" href="#"
-                >Customers</Link>
+                >OM OSS</Link>
             </li>
             <li>
               <Link className="md:p-4 py-2 block hover:underline" href="#"
-                >Blog</Link>
+                >SHOP</Link>
             </li>
             <li>
               <Link
