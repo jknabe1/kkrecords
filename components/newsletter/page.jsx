@@ -30,9 +30,9 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="py-10 px-4 sm:flex sm:justify-center sm:items-center dark:color-black dark:newsletter-bg border-y-4 border-black dark:border-white">
+    <div className="py-10 px-4 sm:flex sm:justify-center sm:items-center dark:color-white border-b-4 border-black dark:border-white">
   <div className="text-center sm:text-left sm:w-1/2">
-    <h2 className="text-2xl font-bold text-black">Få det senaste direkt till din mejl.</h2>
+    <h2 className="text-2xl font-bold dark:text-white text-black">Få det senaste direkt till din mejl.</h2>
   </div>
   <div className="mt-4 sm:mt-0 sm:w-1/2">
     <form action="#" method="POST" className="max-w-sm mx-auto">

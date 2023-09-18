@@ -1,12 +1,11 @@
 import Link from "next/link"
 import moment from "moment"
-import FooterImage from "./footerImage"
+
 
 
 const footer = () => {
   return (
     <div>
-		<FooterImage/>
       <footer className="px-4 divide-y dark:bg-black dark:text-white">
 	<div className="container flex flex-col justify-between pt-10 pb-[90px] mx-auto space-y-8 lg:flex-row lg:space-y-0 ">
 		<div className="lg:w-1/3">
@@ -19,19 +18,19 @@ const footer = () => {
 		</div>
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 			<div className="space-y-3">
-				<h3 className="tracking-wide uppercase dark:text-gray-50">Mer</h3>
+				<h3 className="tracking-wide uppercase dark:text-gray-50">För artister & arrangörer</h3>
 				<ul className="space-y-1">
 					<li>
-						<Link rel="noopener noreferrer" href="#">Velocity</Link>
+						<Link rel="noopener noreferrer" href="#">Bli artist</Link>
 					</li>
 					<li>
-						<Link rel="noopener noreferrer" href="#">HRU?</Link>
+						<Link rel="noopener noreferrer" href="#">Spela på våra konserter</Link>
 					</li>
 					<li>
-						<Link rel="noopener noreferrer" href="#">Kulturförening K&K</Link>
+						<Link rel="noopener noreferrer" href="#">Arrangera med oss</Link>
 					</li>
 					<li>
-						<Link rel="noopener noreferrer" href="#">Velocity</Link>
+						<Link rel="noopener noreferrer" href="#"></Link>
 					</li>
 				</ul>
 			</div>
@@ -62,7 +61,7 @@ const footer = () => {
 						<Link rel="noopener noreferrer" href="#">Om personuppgifts­behandling och cookies</Link>
 					</li>
 					<li>
-						<Link rel="noopener noreferrer" href="#">Cookie-inställningar</Link>
+						
 					</li>
 					<li>
 						

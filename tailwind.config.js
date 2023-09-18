@@ -7,7 +7,16 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-   
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'black': '#000',
+      'green': '#CDF851',
+      'orange': '#FF4A23',
+      'yellow': '#fff000',
+      'blue': '#22222b',
+    }
   },
   plugins: [],
 }

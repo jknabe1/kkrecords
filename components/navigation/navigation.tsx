@@ -1,11 +1,22 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import '../../app/globals.css'
 import Themebutton from "../ThemeButton"
+import React, { useState } from 'react';
+
 
 
  
 const Navigation = () => {
+  
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
   <header>
         <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-black bg-white dark:bg-black dark:text-white border-black dark:border-white border-y-4 fixed top-0 z-50">       
@@ -48,7 +59,7 @@ const Navigation = () => {
             </li>
             <li>
               <Link className="md:p-4 py-2 block hover:underline" href="#"
-                >OM OSS</Link>
+                >STREAM</Link>
             </li>
             <li>
               <Link className="md:p-4 py-2 block hover:underline" href="#"
@@ -56,12 +67,30 @@ const Navigation = () => {
             </li>
             <li>
               <Link
-                className="md:p-4 py-2 block hover:underline"
-                href="#"
-                >
-                  Sign Up</Link>
+                className="md:p-4 py-2 block hover:underline" href="#">
+                  STÖTTA OSS</Link>
             </li>
           </ul>
+          <div className="hamburger-menu">
+      <div
+        className={`hamburger-icon ${isOpen ? 'open' : ''}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {isOpen && (
+        <div className="overlay">
+          <ul className="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      )}
+    </div>
         </div>
         <div className="hidden w-full md:flex md:items-center md:w-auto border-l" id="menu">
           <ul
