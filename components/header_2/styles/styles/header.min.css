@@ -1,0 +1,91 @@
+header .social-links .header-social-link.header-social-link,header .social-links .header-social-link.header-social-link:first-child{
+    display:inline-block;
+    position:relative;
+    width:auto;
+    margin:auto;
+    color:#fff;
+    cursor:pointer
+}
+    header .social-links .header-social-link.header-social-link img{
+        width:14px;
+        display:block
+    }
+    header.white .social-links .header-social-link.header-social-link img.white,header:not(.white) .social-links .header-social-link.header-social-link img:not(.white){
+        display:none
+    }
+    header .social-links .header-social-link.header-social-link:after{
+        content:'';
+        position:absolute;
+        top:20px;
+        left:0;
+        width:0;
+        height:2px;
+        background-color:#FFF;
+        transition:all .2s ease-out
+    }
+    header.white .social-links .header-social-link.header-social-link:after{
+        background-color:#000
+    }
+    header .social-links .header-social-link.header-social-link:hover:after
+    {
+        width:100%
+    }
+    header .social-links .header-social-link.header-social-link:not(:last-child){
+        margin-right:4px
+    }
+    header .social-links{
+        margin-right:12px
+    }
+    header .social-links,header .login-links{
+        display:inline-block
+    }
+    header #cta_button_4045246_ecba0086-0fe0-4513-a1bf-8c899d59b6a6{
+        background:transparent;
+        border-radius:0px;
+        color:#fff;
+        border:1px solid #fff;
+        transform:all 100ms ease;
+    }header #cta_button_4045246_ecba0086-0fe0-4513-a1bf-8c899d59b6a6:hover{
+        color:#000;
+        background:#fff
+    }
+    header #cta_button_4045246_ecba0086-0fe0-4513-a1bf-8c899d59b6a6:after{
+        display:none
+    }
+    @media(max-width:767px){
+        header .login-links.login-links{
+            padding-top:24px
+        }
+        header .social-links.social-links{
+            padding-top:60px;
+            margin:0;
+            display:block
+        }
+        header .social-links .header-social-link.header-social-link:not(:last-child){
+            margin-right:12px
+        }
+        header.white .social-links .header-social-link.header-social-link img.white,header:not(.white) .social-links .header-social-link.header-social-link img.white{
+            display:block
+        }
+        header .social-links .header-social-link.header-social-link img:not(.white){
+            display:none
+        }
+    }@media(min-width:768px){
+        header .login.login{
+            bottom:auto;
+            top:50%;
+            right:0;
+            transform:translate(0,-50%);
+            margin-top:1px
+        }
+            header ul{
+                margin-left:-60px
+            }
+            header.white #cta_button_4045246_ecba0086-0fe0-4513-a1bf-8c899d59b6a6{
+                color:#000;
+                border-color:#000
+            }header.white #cta_button_4045246_ecba0086-0fe0-4513-a1bf-8c899d59b6a6:hover{
+                color:#fff;
+                background:#000
+            }
+        }

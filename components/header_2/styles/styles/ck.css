@@ -1,0 +1,38 @@
+#cookiePopup {
+    background: #ffff00;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 18px 15px;
+    z-index: 99999;
+    color: #000;
+}
+
+.cookie-header{
+    font-size: 3em;
+}
+
+#cookiePopup p {
+    text-align: left;
+    font-size: 1em;
+    color: #4e4e4e;
+    padding-bottom: 0.5%;
+}
+
+#cookiePopup a {
+    text-decoration: underline;
+}
+
+#cookiePopup button {
+    width: 100%;
+    font-size: 2rem;
+    border: #ffdead;
+    background: #000;
+    color: #fff;
+}
+
+#cookiePopup button:hover {
+    background-color: #000;
+    color: #ffff00;
+}
+
