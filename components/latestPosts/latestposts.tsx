@@ -33,6 +33,7 @@ export default function App() {
       <div className="keen-slider__slide number-slide1">
         <Image src={"https://cdn.smehost.net/rcarecordscom-usrcaprod/wp-content/uploads/2023/08/Unknown-10-300x300.jpeg"} width={800} height={600} alt=''></Image>
       </div>
+      {/* remove all the other below when cms is connected. */}
       <div className="keen-slider__slide number-slide2"></div>
       <div className="keen-slider__slide number-slide3">3</div>
       <div className="keen-slider__slide number-slide4">4</div>
